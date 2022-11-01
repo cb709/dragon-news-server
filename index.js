@@ -9,7 +9,7 @@ const categories = require('./data/categories.json')
 const news = require('./data/news.json')
 
 app.get('/', (req, res) => {
-    res.send('World Chinmoy !!')
+    res.send('Hello World!!')
 })
 
 app.get('/categories', (req, res)=> {
@@ -17,7 +17,6 @@ app.get('/categories', (req, res)=> {
 })
 
 app.get('/news', (req, res)=> {
-
     res.send(news)
 })
 
