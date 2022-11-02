@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 app.get('/categories', (req, res)=> {
     res.send(categories)
 })
-app.get('/categories/:id', (req, res)=> {
+app.get('/category/:id', (req, res)=> {
     const id = req.params.id;
     const newsCategories = news.filter(category => category.category_id === id); 
     if(id == '08') {
